@@ -1,4 +1,17 @@
+
+<script>
+    
+</script>
+
+<div class="columns mt-3">
+    <div class="column"></div>
+    <div class="column"></div>
+    <div class="column">Angemeldet als: </div>
+</div>
+
 <div class="title is-3">Auftrag erfassen</div>
+
+
 <div class="columns mt-5">
     <div class="column has-text-left">
         <div class="box">
@@ -41,7 +54,17 @@
             </tr>
         </tbody>
     </table>
+</div>
 
+<div class="box has-text-centered">
+    <table class="table">
+        <thead>
+            <th>Position</th>
+            <th>Artikelnummer</th>
+            <th>Bezeichnung</th>
+            <th>Menge</th>
+            <th></th>
+        </thead>
 
 
 </div>

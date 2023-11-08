@@ -1,6 +1,13 @@
 <script>
 	import Header from './Header.svelte';
 	import './styles.css';
+	import { setContext } from 'svelte';
+
+	import  PocketBase  from 'pocketbase'
+
+	const pb = new PocketBase('https://dev.coredump.online')
+
+	setContext('pb',pb)
 
 
 	

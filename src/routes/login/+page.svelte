@@ -1,7 +1,21 @@
 <script>
+  
+	
+    import { getContext } from 'svelte';
+    
+    const pb = getContext('pb')
+
+    const currentUser = getContext('currentUser')
+	
+	pb.authStore.onChange((auth)=> {
+		console.log('authStore changed',auth)
+		currentUser.set(pb.authStore.model)
+	})
+             
+       
        let username=""
 
-let password=""
+        let password=""
     
     const login = async ()=> {
         await pb.collection('users').authWithPassword(
@@ -9,7 +23,7 @@ let password=""
         password, 
     ).then((e)=>{
 
-        console.log(e)
+        console.log(e.record.name)
 
         }
      )
